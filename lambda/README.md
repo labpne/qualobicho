@@ -11,6 +11,7 @@ https://lab-workshop.s3-sa-east-1.amazonaws.com/animals/bZJAR9kZ-cat.mp3
 
 10)
 
+```
 const LaunchRequestHandler = {
     canHandle(handlerInput) {
         return Alexa.getRequestType(handlerInput.requestEnvelope) === 'LaunchRequest';
@@ -23,10 +24,11 @@ const LaunchRequestHandler = {
             .getResponse();
     }
 };
-
+```
 
 11)
 
+```
 const HelpIntentHandler = {
 const speakOutput = 'Posso fazer um som de bicho pra você. quer tentar?';
 };
@@ -43,10 +45,11 @@ const speakOutput = `Você tentou acionar ${intentName}`;
 const ErrorHandler = {
 	const speakOutput = `Desculpa, Eu não consegui entender o que você disse. Por favor tente outra vez.`;
 };
-
+```
 
 13)
 
+```
 const animals = [
     { 
         'name':"Leão",
@@ -64,17 +67,19 @@ const animals = [
         'url':'Media/animals/Cqp0aVd8-cow-1.mp3'
     }
 ];
-
+```
 
 14)
 
+```
 function getAvailableIndex(){
       return Math.floor(Math.random() * 2);
 }
-
+```
 
 15)
 
+```
 const MakeSoundIntentHandler = {
     canHandle(handlerInput) {
          return handlerInput.requestEnvelope.request.type === 'IntentRequest'
@@ -100,17 +105,19 @@ const MakeSoundIntentHandler = {
             .getResponse();
     }
 };
-
+```
 
 16)
 
+```
 const Util = require('util.js');
 const Escape = require('./lodash/escape');
 const _LOG = 'MEU-LOG: ';
-
+```
 
 17)
 
+```
 {
   "name": "qual o bicho",
   "version": "1.0.0",
@@ -128,10 +135,11 @@ const _LOG = 'MEU-LOG: ';
     "lodash": "^4.17.11"
   }
 }
-
+```
 
 18)
 
+```
 const TheGuessIntentHandler = {
     canHandle(handlerInput) {
          return handlerInput.requestEnvelope.request.type === 'IntentRequest'
@@ -154,4 +162,4 @@ const TheGuessIntentHandler = {
             .getResponse();
     }
 };
-
+```
