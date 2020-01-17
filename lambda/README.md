@@ -110,8 +110,8 @@ const MakeSoundIntentHandler = {
 16)
 
 ```
-const Util = require('util.js');
-const Escape = require('./lodash/escape');
+const Util = require('./util.js');
+const Escape = require('lodash/escape');
 const _LOG = 'MEU-LOG: ';
 ```
 
